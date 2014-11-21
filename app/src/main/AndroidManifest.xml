@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atomindustries.vignesh.hcare" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.main" />
+        </activity>
+        <activity
+            android:name=".CreditsActivity"
+            android:label="@string/title_activity_credits"
+            android:parentActivityName=".main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.main" />
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:parentActivityName=".main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.main" />
+        </activity>
+        <activity
+            android:name=".AdviceActivity"
+            android:label="@string/title_activity_advice"
+            android:parentActivityName=".main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.main" />
+        </activity>
+        <activity
+            android:name=".DoctorActivity"
+            android:label="@string/title_activity_doctor" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.main" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".AdviceHelpActivity"
+            android:label="@string/title_activity_advice_help"
+            android:parentActivityName=".AdviceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.AdviceActivity" />
+        </activity>
+        <activity
+            android:name=".SymptomsActivity"
+            android:label="@string/title_activity_symptoms"
+            android:parentActivityName=".AdviceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.AdviceActivity" />
+        </activity>
+        <activity
+            android:name=".ImageActivity"
+            android:label="@string/title_activity_image"
+            android:parentActivityName=".AdviceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.AdviceActivity" />
+        </activity>
+        <activity
+            android:name=".HearingActivity"
+            android:label="@string/title_activity_hearing"
+            android:parentActivityName=".TestActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.TestActivity" />
+        </activity>
+        <activity
+            android:name=".EyeActivity"
+            android:label="@string/title_activity_eye"
+            android:parentActivityName=".TestActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.TestActivity" />
+        </activity>
+        <activity
+            android:name=".ConcussionActivity"
+            android:label="@string/title_activity_concussion"
+            android:parentActivityName=".TestActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.TestActivity" />
+        </activity>
+        <activity
+            android:name=".EyeResultActivity"
+            android:label="@string/title_activity_eye_result"
+            android:parentActivityName=".TestActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.TestActivity" />
+        </activity>
+        <activity
+            android:name=".HearingResultActivity"
+            android:label="@string/title_activity_hearing_result"
+            android:parentActivityName=".TestActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.atomindustries.vignesh.hcare.TestActivity" />
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+</manifest>

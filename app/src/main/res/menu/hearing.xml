@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.atomindustries.vignesh.hcare.HearingActivity" >
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/action_credits"
+        android:title="Credits"
+        android:orderInCategory="101" />
+</menu>

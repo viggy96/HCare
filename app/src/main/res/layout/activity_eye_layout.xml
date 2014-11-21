@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.atomindustries.vignesh.hcare.EyeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:id="@+id/can_see_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Touch Screen if you can see this!"
+        android:textSize="23sp"
+        android:onClick="clicked"
+        android:padding="10sp" />
+
+</RelativeLayout>

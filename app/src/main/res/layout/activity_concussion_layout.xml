@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.atomindustries.vignesh.hcare.ConcussionActivity">
+
+    <TextView android:id="@+id/concussion_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Prevent swelling and further injury\n  &#8226; Stop activity and rest\n  &#8226; Apply ice"
+        android:textSize="23sp" />
+
+    <TextView android:id="@+id/concussion_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Treat Symptoms\n   &#8226; For pain, take acetaminophen"
+        android:textSize="23sp"
+        android:layout_below="@id/concussion_step1" />
+
+    <TextView android:id="@+id/concussion_step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Monitor Symptoms"
+        android:textSize="23sp"
+        android:layout_below="@id/concussion_step2" />
+
+    <TextView android:id="@+id/concussion_step4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Call a Doctor if symptoms get worse"
+        android:textSize="23sp"
+        android:layout_below="@id/concussion_step3" />
+
+    <TextView android:id="@+id/concussion_symptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" &#8226; Unequal pupils\n &#8226; Confusion, Agitation\n &#8226; Slurred speech\n &#8226; Weakness on part of the body"
+        android:textSize="23sp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Symptoms to look for:"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_above="@id/concussion_symptoms"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_above="@id/concussion_step1"/>
+
+</RelativeLayout>

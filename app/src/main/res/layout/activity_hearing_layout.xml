@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atomindustries.vignesh.hcare.HearingActivity">
+
+    <TextView android:id="@+id/hearing_exam_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Touch 'Yes' if you hear a tone.\n A series of 3 tones will be played."
+        android:textSize="25sp"
+        android:gravity="center" />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/can_hear_button"
+                android:layout_weight="0.5"
+                android:layout_height="150dp"
+                android:text="Yes"
+                android:textSize="23sp"
+                android:layout_alignParentBottom="true"
+                android:onClick="clicked" />
+
+            <Button android:id="@+id/cannot_hear_button"
+                android:layout_weight="0.5"
+                android:layout_height="150dp"
+                android:text="No"
+                android:textSize="23sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:onClick="clicked" />
+        </TableRow>
+
+     </TableLayout>
+
+</RelativeLayout>

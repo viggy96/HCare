@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.atomindustries.vignesh.hcare.EyeResultActivity">
+
+    <TextView android:id="@+id/eye_exam_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Based on your test results, your vision is good, but we recommend you see a doctor."
+        android:textSize="23sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <Button android:id="@+id/doctor_button"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@id/eye_exam_result"
+        android:text="Locate a Doctor"
+        android:textSize="23sp"
+        android:drawableTop="@drawable/ic_heart"
+        android:padding="23sp"
+        android:onClick="openDoctorActivity" />
+
+</RelativeLayout>
